@@ -1,5 +1,5 @@
 {
-  "name": "marked-down",
+  "name": "markdown-buttons",
   "dependencies": {
     "ember": "~2.6.0",
     "ember-cli-shims": "0.1.1",
