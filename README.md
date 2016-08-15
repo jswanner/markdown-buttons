@@ -1,4 +1,4 @@
-# Marked-down
+# markdown-buttons
 
 This README outlines the details of collaborating on this Ember addon.
 

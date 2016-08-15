@@ -1,1 +1,6 @@
-{{marked-down action=(action (mut value)) value=value}}
+{{#markdown-bold action=(action (mut value)) for="input"}}Bold{{/markdown-bold}}
+{{#markdown-italic action=(action (mut value)) for="input"}}Italic{{/markdown-italic}}
+{{#markdown-code action=(action (mut value)) for="input"}}Code{{/markdown-code}}
+{{#markdown-h1 action=(action (mut value)) for="input"}}H1{{/markdown-h1}}
+<br/>
+{{textarea cols="50" id="input" rows="10" value=(readonly value)}}

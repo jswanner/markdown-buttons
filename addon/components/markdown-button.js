@@ -5,7 +5,9 @@ export default Component.extend({
   attributeBindings: ['type'],
 
   click() {
-    const elem = this.get('elem');
+    const elem = document.getElementById(this.get('for'));
+    if (!elem) { return; }
+
     const { selectionEnd, selectionStart, value } = elem;
     const { precede, succeed } = this.getProperties('precede', 'succeed');
     let altered;

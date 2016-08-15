@@ -4,7 +4,6 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dummy',
     environment: environment,
-    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -25,6 +24,11 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+  }
+
+  if (environment === 'production') {
+    // Testem prefers this...
+    ENV.baseURL = '/markdown-buttons/';
   }
 
   if (environment === 'test') {
