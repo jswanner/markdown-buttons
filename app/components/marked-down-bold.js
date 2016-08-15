@@ -1,0 +1,1 @@
+export { default } from 'marked-down/components/marked-down-bold';
